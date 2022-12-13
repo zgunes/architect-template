@@ -1,0 +1,229 @@
+body{
+    margin: 0%;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+.temizle{
+    clear: both;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
+  
+  .header span {
+    float: left;
+    display: block;
+    padding: 14px 115px;
+  }
+  
+  .header .butonlar {
+    float: right;
+    display: block;
+    padding: 14px 115px;
+  }
+  
+  .header .butonlar  a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 5px 15px;
+    text-decoration: none;
+  }
+  
+  .header .butonlar  a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+
+#banner{
+    position: relative; /*bir nesnenin üzerine başka bir nesne getirmek için kullanılır.*/
+}
+
+#banner img{
+    width: 100%; /*burada vw kullanılmaz çünkü scrollbar için pay bırakmıyor o yüzden aşağıda scroll bar çıkıyor*/
+    height: 100vh; /*mobil uyumluluk için viewheight*/
+}
+
+#banner img{
+    width: 100%;
+
+}
+main{
+    width: 85%;
+    /*background: #ccc;*/
+    margin-left: auto;
+    margin-right: auto;
+    /* margin(dış boşluk):10px 30px 20px 40px; margin-right,left, top, bottom tek tek yazmamak için saat yönünde olacak şekilde dört yöne boşluk verilmiştir*/
+    /* margin: 40px; her yönden 40px boşluk bırakır*/
+    /* margin: 20px 40px; çift şekilde boşluk bırakılmış- üst/alt-sağ/sol şeklinde*/ 
+    /* padding(iç boşluk):10px 30px 20px 40px; padding-right,left, top, bottom tek tek yazmamak için saat yönünde olacak şekilde dört yöne boşluk verilmiştir*/
+    /* padding: 40px; her yönden 40px boşluk bırakır*/
+    /* padding: 20px 40px; çift şekilde boşluk bırakılmış- üst/alt-sağ/sol şeklinde*/ 
+    /*border-bottom: 10px solid #000 - aşağıdan çizgi verir*/
+    /*border-top-style: solid;/*çizgi stili*/
+    /*border-bottom-width: 10px;/*genişliği*/
+    /*border-bottom-color: teal;/*border rengi*/ /*border-bottom: 10px solid #000; - tek satıra inmiş hali*/
+    /*border: 10px solid #000; 4 kenara da aynı stili uygulamak için*/
+    /*padding: 10px;*/
+    /*box-sizing: border-box;/*margin ve padding ile oluşan boşlukları main etiketindeki yüzdelik değerden düşer kutularda taşma olmasını engeller*/
+    /*border-radius: 10px; /*kutuların köşelerini yumuşatmak için kullanılır  -border-radius 50% verilirse oval olur (whatsapp pp gibi)*/
+}
+
+.slogan{
+    position: absolute;/*kesinlikle burada dur*/
+    top: 45%;/*BR yazısının yukarıdan 45% yukarıda olması için*/
+    bottom: 40%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.slogan span{ /*span etiketinin işlevi yoktur verilen her stil biçimlendirmesinde istenilen şekli alır*/
+    padding: 5px 10px;
+    font-size: 2.2em;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.baslik{
+border-bottom: 1px solid #e5e5e5;
+padding-bottom: 10px;
+font-weight: normal;
+font-size: 1.4rem;
+margin-bottom: 30px;
+}
+
+#projeler{
+    margin-top: 70px;
+}
+
+.proje{
+position: relative;
+width: 23.3%;
+float: left;
+margin: 10px;
+
+}
+
+.proje img{
+    width: 100%;
+}
+
+.proje h2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: normal;
+    margin: 0px;
+    padding: 10px 20px;
+}
+#hakkimizda{
+    margin-top: 70px;
+    
+}
+
+#hakkimizda p{
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+    line-height: 150%;
+    margin-bottom: 40px;
+}
+.ekip{
+    width: 23.3%;
+    margin: 20px 8px;
+    float: left;
+
+}
+.ekip img{
+    width: 100%;
+    filter: grayscale(70%);
+}
+.ekip img:hover{
+    filter: grayscale(0%);
+}
+.ekip h2{
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+.ekip h3{
+    font-weight: normal;
+    font-size: 1rem;
+    color: #999;
+}
+.ekip a{
+    width: 100%;
+    background-color: #e5e5e5;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+    padding: 10px;
+}
+.ekip a:hover{
+    background-color: #ccc;
+}
+#iletisim{
+    margin-top: 50px;
+
+}
+#iletisim input{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 0.95rem;
+    border-color: 1px solid #ccc;
+}
+#iletisim button{
+    margin-top: 20px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 0.95rem;
+
+}
+#iletisim input:focus{/*hover üzerine gelince focus üstüne tıklanması*/
+    border: 1px solid #666;
+    outline: none;
+}
+#iletisim button:hover{
+    background-color: #ccc;
+    color: #333;
+    cursor: pointer;
+    border: none;
+}
+#harita{
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+#harita iframe{
+    width: 100%;
+    height: 600px;
+    border: none;
+}
+/*Media Queries -- bütün cihazlara uyumlu yapmak için
+cihaz türü: all, screen, speech, print
+min-width, max-width, min-height, max-height
+600, 768, 992, 1200 px
+@media cihaz türü and (max-width: ??px){} 
+@media (max-width: 600px){} -- telefon
+@media (max-width: 768px){} -- tablet
+@media (max-width: 992px){} -- tablet
+@media (max-width: 1200px){} -- bilgisayar
+max-width kullanılıyorsa büyükten küçüğe sıralanmalı
+*/
